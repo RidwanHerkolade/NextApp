@@ -1,42 +1,82 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background1: rgba(183, 4, 133, 0.1);
+  --font-familys: "Vibur", cursive;
+  --font-family: "Nunito", sans-serif;
+  --font-fold: 21px;
+  --font-smalleys: 20px;
+  --font-smalley: 18px;
+  --font-folds: 23px;
+  --font-smallz: 9px;
+  --font-smalls: 11px;
+  --font-small: 15px;
+  --font-book: 13px;
+  --font-books: 12px;
+  --font-nav: 1rem;
+  --font-smallz: 13px;
+  --detailBg: #E5E5E5;
+  --font-logo: 15px;
+  --font-logos: 17px;
+  --font-header: 25px;
+  --font-headers: 30px;
+  --font-new: 40px;
+  --font-news: 45px;
+  --color-border: #14161a;
+  --color-bg: #0d0c22;
+  --color-btn: #3673fd;
+  --color-blackie: black;
+  --color-nav: rgb(38, 38, 202);;
+  --color-navs: #4B4C4C;
+  --color-text: #6A6B6C;
+  --color-blog: #0B0B0E;
+  --color-border: #E1E1E1;
+  --color-container: rebeccapurple;
+  --color-white: #ffffff;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+ scroll-behavior: smooth;
+ box-sizing: border-box;
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 a {
-  color: inherit;
-  text-decoration: none;
+ text-decoration: none;
+ color: inherit;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+ul {
+ list-style: none;
+ padding: 0rem;
+ margin: 0rem;
+}
+body {
+ margin: 0rem;
+ padding: 0rem;
+ box-sizing: border-box;
+ background: var(--color-bg);
+ color: var(--color-white);
+}
+h1,h2,h3,h4,h5,h6 {
+   margin: 0rem;
+   padding: 0rem;
+} 
+input {
+ font-family: var(--font-family);
+}
+button {
+ font-family: var(--font-family);
+ cursor: pointer;
+}
+thead {
+ padding: 0rem;
+ margin: 0rem;
+ border-collapse: collapse;
+}
+ a {
+  text-decoration: none;
+  color: inherit;
+ }
+.container {
+  background-color: var(--color-red);
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4rem;
+  flex-direction: column;
+  height: calc(100vh - 4.5rem);
 }

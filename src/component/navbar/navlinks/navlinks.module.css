@@ -1,0 +1,20 @@
+.li {
+    font-size: var(--font-logos);
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    font-weight: 800;
+    /* background-color: var(--color-white); */
+    /* color: var(--color-bg); */
+}
+.active {
+    background-color: var(--color-white);
+    color: var(--color-bg);
+}
+.logout {
+    background-color: var(--color-white);
+    color: var(--color-bg);
+    font-size: var(--font-small);
+    padding: 0.3rem 1rem;
+    outline: none;
+    border: none;
+}
